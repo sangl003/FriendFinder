@@ -22,16 +22,26 @@
 
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-          
+	
+	<style>
+		#container-body{
+			background-image: url(data:image/jpeg;base64,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);
+			background-repeat: no-repeat;
+  			background-size: 100% 100%;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			color: aliceblue;
+		
+		}
+	</style>
 	
 </head>
 
 <body>
 	<header>
 		<nav>
-			<div class="nav-wrapper amber darken-3">
-				<i class="fa fa-handshake-o fa-4x" aria-hidden="true" id=logo-icon></i>
-				<a href="/" class="brand-logo" id="logo"> Friend Finder</a>
+			<div class="nav-wrapper black darken-3">
+				<i class="fa fa-handshake-o fa-4x" aria-hidden="true" id=logo-icon></i> 
+				<a href="/" class="brand-logo" id="logo"> Friend Finder</a> 
 				<ul class="right hide-on-med-and-down" id="head-nav-links">
 					<li><a href="/survey">Survey</a></li>
 					<li><a href="/api/friends">API Friends List</a></li>
@@ -42,7 +52,7 @@
 	</header>
 
 	<main>
-		<div class="container">
+		<div class="container" id="container-body">
 			<div class="row">
 				<div class="col s12 z-depth-5 mainpanel">
 					<div id="mainpanel-content">
@@ -66,7 +76,7 @@
 						<!-- Survey Questions -->
 						<div class="input-field col s12">
 							<h5>Question 1</h5>
-							<h6>Your mind is always buzzing with unexplored ideas and plans.</h6>
+							<h6>Do you like Travelling?</h6>
 							<select id="question1">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -79,7 +89,7 @@
 
 						<div class="input-field col s12">
 							<h5>Question 2</h5>
-							<h6>Generally speaking, you rely more on your experience than your imagination.</h6>
+							<h6>Are you open to diversity?</h6>
 							<select id="question2">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -92,7 +102,7 @@
 
 						<div class="input-field col s12">
 							<h5>Question 3</h5>
-							<h6>You find it easy to stay relaxed and focused even when there is some pressure.</h6>
+							<h6>Do like to try new things/ food / adventures</h6>
 							<select id="question3">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -105,7 +115,7 @@
 
 						<div class="input-field col s12">
 							<h5>Question 4</h5>
-							<h6>You rarely do something just out of sheer curiosity.</h6>
+							<h6>Are you an extrovert?.</h6>
 							<select id="question4">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -118,7 +128,7 @@
 
 						<div class="input-field col s12">
 							<h5>Question 5</h5>
-							<h6>People can rarely upset you.</h6>
+							<h6>Can you make someone smile?</h6>
 							<select id="question5">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -129,71 +139,7 @@
 							</select>
 						</div>
 
-						<div class="input-field col s12">
-							<h5>Question 6</h5>
-							<h6>It is often difficult for you to relate to other people’s feelings.</h6>
-							<select id="question6">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h5>Question 7</h5>
-							<h6>In a discussion, truth should be more important than people’s sensitivities.</h6>
-							<select id="question7">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h5>Question 8</h5>
-							<h6>You rarely get carried away by fantasies and ideas.</h6>
-							<select id="question8">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h5>Question 9</h5>
-							<h6>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h6>
-							<select id="question9">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
-						<div class="input-field col s12">
-							<h5>Question 10</h5>
-							<h6>You feel more energetic after spending time with a group of people.</h6>
-							<select id="question10">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-						</div>
-
+					
 						<!-- Survey Submit Button -->
 						<div class="center">
 							<button class="btn-floating center waves-effect waves-light btn-large" type="submit" name="action" id="submitButton">Submit Responses
@@ -206,7 +152,7 @@
 		</div>
 	</main>
 
-	<footer class="page-footer   amber darken-3">
+	<footer class="page-footer   black darken-3">
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
@@ -262,11 +208,7 @@
 					$('#question3').val().trim(),
 					$('#question4').val().trim(),
 					$('#question5').val().trim(),
-					$('#question6').val().trim(),
-					$('#question7').val().trim(),
-					$('#question8').val().trim(),
-					$('#question9').val().trim(),
-					$('#question10').val().trim()
+				
 				]
 			};
 			// console.log('userInput = ' + JSON.stringify(userInput));
